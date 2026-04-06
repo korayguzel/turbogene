@@ -1,0 +1,29 @@
+# Data and checkpoints (too large for git)
+checkpoints/
+data/
+
+# External repos (cloned locally, not bundled)
+scGPT/
+transcriptformer/
+
+# Build artifacts
+*.docx
+*.env
+
+# Paper (private, not published yet)
+paper/
+
+# Internal project notes
+CLAUDE.md
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+
+# Profiling outputs
+docs/profiling_results/*.npz
+
+# OS
+.DS_Store

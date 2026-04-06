@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "turbogene"
+version = "0.1.0"
+description = "Memory-efficient inference for TranscriptFormer on consumer GPUs"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+authors = [
+    {name = "Omur Koray Guzel", email = "okorayguzel@gmail.com"},
+]
+dependencies = [
+    "torch>=2.4,<=2.5.1",
+    "numpy",
+    "scipy",
+    "anndata",
+    "scanpy",
+    "scikit-learn",
+    "matplotlib",
+    "h5py",
+    "transcriptformer>=0.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[tool.setuptools.packages.find]
+include = ["turbogene*"]
