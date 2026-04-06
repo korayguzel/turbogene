@@ -104,10 +104,6 @@ examples/               # User-facing quickstart
 docs/                   # Design notes
 ```
 
-## Preprint
-
-In preparation.
-
 ## License
 
 MIT
